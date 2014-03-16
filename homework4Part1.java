@@ -5,7 +5,7 @@ import java.io.*;
 
 class homework4Part1{
 	public static void main(String[] args){
-		System.out.println("請選擇 : \t1)開始遊戲 2)結束遊戲 : ");
+		System.out.println("Blackjack Game \t1)Start Game 2)Quit Game : ");
 		Scanner keyInt = new Scanner(System.in);
 		int option1 = keyInt.nextInt();
 		//start a new Blackjack Game
@@ -27,7 +27,7 @@ class homework4Part1{
 			player.ShowPoint();
 			
 			while(true){
-				System.out.println("1)Hit(叫牌) 2)Stay(停止叫牌) : ");
+				System.out.println("1)Hit(get card) 2)Stay(stop get card) : ");
 				int option2 = keyInt.nextInt();
 				
 				if(option2 ==2)
@@ -83,7 +83,7 @@ class homework4Part1{
 			}
 
 			//keyin option1
-			System.out.println("請選擇 : \t1)繼續遊戲 2)結束遊戲 : ");
+			System.out.println("Blackjack Game \t1)Continue Game 2)Quit Game : ");
 			option1 = keyInt.nextInt();
 			player.removeAll();
 			maker.removeAll();
